@@ -11,11 +11,23 @@ class ChurchServiceController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
+        def churchServices = churchServiceService.list(params)
+        def churchServicesCount = churchServiceService.count()
+
+        request.withFormat {
+            json { respond churchServices,contentType: 'application/json' , status: OK }
+            '*' { respond churchServices, model: [churchServicesCount: churchServicesCount] }
+        }
+ 
         respond churchServiceService.list(params), model:[churchServiceCount: churchServiceService.count()]
     }
 
-    def show(Long id) {
-        respond churchServiceService.get(id)
+    def show(ChurchService churchService) {
+        if (churchService == null) {
+            notFound()
+            return
+        }
+        respond churchServiceService.get(churchService.id)
     }
 
     def create() {
@@ -44,6 +56,7 @@ class ChurchServiceController {
         }
     }
 
+    // THIS ACTION IS SOLEY FOR WHEN WE ARE ACCESSING VIA GRAILS FRONTEND(GSP)
     def edit(Long id) {
         respond churchServiceService.get(id)
     }
@@ -70,13 +83,13 @@ class ChurchServiceController {
         }
     }
 
-    def delete(Long id) {
-        if (id == null) {
+    def delete(ChurchService churchService) {
+        if (churchService == null) {
             notFound()
             return
         }
 
-        churchServiceService.delete(id)
+        churchServiceService.delete(churchService.id)
 
         request.withFormat {
             form multipartForm {
@@ -89,6 +102,7 @@ class ChurchServiceController {
 
     protected void notFound() {
         request.withFormat {
+            json { render status: NOT_FOUND, contentType: 'application/json', text: '{"error": "ChurchService not found"}' }
             form multipartForm {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'churchService.label', default: 'ChurchService'), params.id])
                 redirect action: "index", method: "GET"
