@@ -26,7 +26,6 @@ class ChurchServiceTypeController {
             notFound()
             return
         }
-
         respond churchServiceTypeService.get(churchServiceType.id)
     }
 
