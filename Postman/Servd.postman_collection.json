@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "2d56331e-572d-4959-abc4-3ad3807af853",
+		"name": "Servd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7830219"
+	},
+	"item": [
+		{
+			"name": "List  ServiceTypes",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{server}}/api/serviceTypes",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"serviceTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show  ServiceType",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{server}}/api/serviceTypes/5",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"serviceTypes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create  ServiceType",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Test Service 51\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
+				},
+				"url": {
+					"raw": "{{server}}/api/serviceTypes",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"serviceTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update  ServiceType",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Updated Sunday Service\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
+				},
+				"url": {
+					"raw": "{{server}}/api/serviceTypes/1",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"serviceTypes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ServiceType",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{server}}/api/serviceTypes/15",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"serviceTypes",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Services",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{server}}/api/services",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show  Service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{server}}/api/services/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create  Service",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Test Service 2133\",\n    \"endTime\":\"2024-10-15T11:00:00\",\n    \"startTime\":\"2024-10-15T09:00:00\",\n    \"capacity\": 3000,\n    \"serviceType\": 1,\n}"
+				},
+				"url": {
+					"raw": "{{server}}/api/services",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update  Service",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"updated Test Service 113\",\n    \"endTime\":\"2024-10-15T11:00:00\",\n    \"startTime\":\"2024-10-15T09:00:00\",\n    \"capacity\": 3000,\n    \"serviceType\": 1,\n}"
+				},
+				"url": {
+					"raw": "{{server}}/api/services/6",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Service",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{server}}/api/services/5",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
