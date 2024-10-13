@@ -5,6 +5,7 @@ import static org.springframework.http.HttpStatus.*
 
 class ChurchServiceController {
 
+    static responseFormats = ['json', 'xml']
     ChurchServiceService churchServiceService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
