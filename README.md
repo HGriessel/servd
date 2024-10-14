@@ -54,11 +54,16 @@ You can then access the service on http://localhost:8081
 
 ## API Documentation 
 
-You can find the API documentation in the form of a Postman collection at [servd api]()
+You can find the API documentation in the form of a Postman collection at [servd API](https://github.com/HGriessel/servd/tree/main/Postman)
+## Decisions and Assumption
 
+1. Authentication was not part of the project scope. So was not implemented.
+2. I decided on Postgres soley due to familiarity with the database
+3. I decided to showcase my abilities with containers by using a docker-compose environment
+  - This has the major benefit of being able to deploy the same build repeatable regardless of the host machine's environment
+ 
 
 ## TODO 
-
 1. Return whether delete was successgull or not
 2. update does not validate incorrect field names ie if you pass names instead of name it will be ignored with no warning
   - however the updated object is returned responsibilty can sit on the client side to ensure correct updates was made
