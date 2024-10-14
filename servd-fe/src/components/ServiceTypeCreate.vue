@@ -11,9 +11,6 @@
         </div>
         <div>
 
-          <label for="location" class="block font-medium text-gray-600">Location:</label>
-          <input type="text" v-model="currentServiceType.location"
-            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required />
         </div>
         <div>
           <label for="description" class="block font-medium text-gray-600">Description:</label>
@@ -35,7 +32,6 @@
         <thead class="bg-gray-50">
           <tr>
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
             <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
           </tr>
@@ -43,7 +39,6 @@
         <tbody class="bg-white divide-y divide-gray-200">
           <tr v-for="type in serviceTypes" :key="type.id">
             <td class="px-6 py-4 whitespace-nowrap">{{ type.name }}</td>
-            <td class="px-6 py-4 whitespace-nowrap">{{ type.location }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ type.description }}</td>
             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
               <button class="text-indigo-600 hover:text-indigo-900" @click="editServiceType(type)">

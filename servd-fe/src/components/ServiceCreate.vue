@@ -5,12 +5,14 @@
       <h2 class="text-2xl font-semibold text-gray-700 mb-4">Create or Update Service</h2>
       <form class="space-y-6" @submit.prevent="saveService">
         <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+
           <div>
             <label for="title" class="block text-sm font-medium text-gray-700">Service Title</label>
             <input type="text" v-model="currentService.title" id="title"
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               required />
           </div>
+
           <div>
             <label for="capacity" class="block text-sm font-medium text-gray-700">Capacity</label>
             <input type="number" v-model="currentService.capacity" min="1" id="capacity"
@@ -35,15 +37,25 @@
           </div>
         </div>
 
-        <div>
-          <label for="serviceType" class="block text-sm font-medium text-gray-700">Service Type</label>
-          <select v-model="currentService.serviceType" id="serviceType"
-            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm bg-white focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-            required>
-            <option v-for="type in serviceTypes" :key="type.id" :value="type.id">
-              {{ type.name }}
-            </option>
-          </select>
+        <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+
+          <div>
+            <label for="location" class="block text-sm font-medium text-gray-700">Service location</label>
+            <input type="text" v-model="currentService.location" id="location"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              required />
+          </div>
+
+          <div>
+            <label for="serviceType" class="block text-sm font-medium text-gray-700">Service Type</label>
+            <select v-model="currentService.serviceType" id="serviceType"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm bg-white focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              required>
+              <option v-for="type in serviceTypes" :key="type.id" :value="type.id">
+                {{ type.name }}
+              </option>
+            </select>
+          </div>
         </div>
 
         <div class="flex justify-end">
@@ -69,6 +81,7 @@
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Start Time</th>
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">End Time</th>
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Capacity</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Service Type</th>
             <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
           </tr>
@@ -79,6 +92,7 @@
             <td class="px-6 py-4 whitespace-nowrap">{{ formatDateTime(service.startTime) }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ formatDateTime(service.endTime) }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ service.capacity }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ service.location }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ getServiceTypeName(service.serviceType.id) }}</td>
             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
               <button class="text-indigo-600 hover:text-indigo-900" @click="editService(service)">
