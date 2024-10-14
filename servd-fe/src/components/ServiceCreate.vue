@@ -123,6 +123,7 @@ export default {
         startTime: '',
         endTime: '',
         capacity: 1,
+        location: '',
         serviceType: null
       }
     };
@@ -166,10 +167,8 @@ export default {
     async saveService() {
       try {
         if (this.currentService.id) {
-
           await axios.put(`http://localhost:8080/api/services/${this.currentService.id}`, this.currentService);
         } else {
-
           await axios.post('http://localhost:8080/api/services', this.currentService);
         }
 
@@ -194,6 +193,7 @@ export default {
         startTime: service.startTime,
         endTime: service.endTime,
         capacity: service.capacity,
+        location: service.location,
         serviceType: service.serviceType.id
       };
     },
