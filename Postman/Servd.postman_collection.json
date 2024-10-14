@@ -53,25 +53,23 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json",
-						"type": "text",
-						"disabled": true
+						"type": "text"
 					},
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"type": "text",
-						"disabled": true
+						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "{{server}}/api/serviceTypes/5",
+					"raw": "{{server}}/api/serviceTypes/1",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"serviceTypes",
-						"5"
+						"1"
 					]
 				}
 			},
@@ -100,7 +98,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Test Service 51\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
+					"raw": "{\n    \"name\":\"Test Service 511\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
 				},
 				"url": {
 					"raw": "{{server}}/api/serviceTypes",
@@ -138,7 +136,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Updated Sunday Service\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
+					"raw": "{\n    \"nameee1\":\"Updated Sunday Se123213rvice\",\n    \"location\":\"Just otherside the chinamasadfll\",\n    \"description\":\"Testing the test\",\n}"
 				},
 				"url": {
 					"raw": "{{server}}/api/serviceTypes/1",
@@ -180,14 +178,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{server}}/api/serviceTypes/15",
+					"raw": "{{server}}/api/serviceTypes/14",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"serviceTypes",
-						"15"
+						"14"
 					]
 				}
 			},
@@ -204,12 +202,12 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Content-Type",
+						"key": "Accept",
 						"value": "application/json",
 						"type": "text"
 					},
 					{
-						"key": "Accept",
+						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
 					}
@@ -244,14 +242,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{server}}/api/services/6",
+					"raw": "{{server}}/api/services/9",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"services",
-						"6"
+						"9"
 					]
 				}
 			},
@@ -318,7 +316,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"updated Test Service 113\",\n    \"endTime\":\"2024-10-15T11:00:00\",\n    \"startTime\":\"2024-10-15T09:00:00\",\n    \"capacity\": 3000,\n    \"serviceType\": 1,\n}"
+					"raw": "{\n    \"title\":\"updated Test Service 1113\",\n    \"endTime\":\"2024-10-15T11:00:00\",\n    \"startTime\":\"2024-10-15T09:00:00\",\n    \"capacity\": 3000,\n    \"serviceType\": 1,\n}"
 				},
 				"url": {
 					"raw": "{{server}}/api/services/6",
@@ -350,14 +348,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{server}}/api/services/5",
+					"raw": "{{server}}/api/services/8",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"services",
-						"5"
+						"8"
 					]
 				}
 			},
