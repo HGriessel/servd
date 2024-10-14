@@ -1,13 +1,9 @@
 <template>
-  <div class="max-w-7xl mx-auto p-6 bg-gray-100">
-
+  <div class="max-w-7xl mx-auto p-8 bg-gray-00">
     <h1 class="text-4xl font-bold text-gray-800 mb-8">Church Services</h1>
-
-    <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-8 p-6">
+    <div class="bg-blue-50 shadow overflow-hidden sm:rounded-lg mb-8 p-6">
       <h2 class="text-2xl font-semibold text-gray-700 mb-4">Create or Update Service</h2>
-
-      <form @submit.prevent="saveService" class="space-y-6">
-        <!-- Title -->
+      <form class="space-y-6" @submit.prevent="saveService">
         <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div>
             <label for="title" class="block text-sm font-medium text-gray-700">Service Title</label>
@@ -15,7 +11,6 @@
               class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               required />
           </div>
-
           <div>
             <label for="capacity" class="block text-sm font-medium text-gray-700">Capacity</label>
             <input type="number" v-model="currentService.capacity" min="1" id="capacity"
@@ -24,7 +19,6 @@
           </div>
         </div>
 
-        <!-- Start Time -->
         <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div>
             <label for="startTime" class="block text-sm font-medium text-gray-700">Start Time</label>
@@ -44,7 +38,7 @@
         <div>
           <label for="serviceType" class="block text-sm font-medium text-gray-700">Service Type</label>
           <select v-model="currentService.serviceType" id="serviceType"
-            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm bg-white focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             required>
             <option v-for="type in serviceTypes" :key="type.id" :value="type.id">
               {{ type.name }}
@@ -65,8 +59,8 @@
       </form>
     </div>
 
-    <div class="bg-white shadow overflow-hidden sm:rounded-lg p-6">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Services List</h2>
+    <div class="bg-blue-50 shadow overflow-hidden sm:rounded-lg p-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Services List</h2>
 
       <table class="min-w-full divide-y divide-gray-200">
         <thead class="bg-gray-50">
