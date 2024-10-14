@@ -2,7 +2,6 @@ package church.servd.services
 
 class ChurchServiceType {
     String name
-    String location
     String description
 
     static constraints = {

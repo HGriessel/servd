@@ -5,11 +5,13 @@ class ChurchService {
     Date startTime
     Date endTime
     Integer capacity
+    String location
     ChurchServiceType serviceType
     static belongsTo = [serviceType: ChurchServiceType]
 
     static constraints = {
         title blank: false, maxSize: 200
+        location blank: false, maxSize: 200
         startTime nullable: false
         endTime nullable: false
         serviceType nullable: false
