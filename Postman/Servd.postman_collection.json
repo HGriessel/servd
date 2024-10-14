@@ -3,7 +3,8 @@
 		"_postman_id": "2d56331e-572d-4959-abc4-3ad3807af853",
 		"name": "Servd",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "7830219"
+		"_exporter_id": "7830219",
+		"_collection_link": "https://lunar-shuttle-706483.postman.co/workspace/New-Team-Workspace~b29c283e-8032-4f09-88f3-bf20633a75f2/collection/7830219-2d56331e-572d-4959-abc4-3ad3807af853?action=share&source=collection_link&creator=7830219"
 	},
 	"item": [
 		{
@@ -98,7 +99,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Test Service 511\",\n    \"location\":\"Just otherside the chinamall\",\n    \"description\":\"Testing the test\",\n}"
+					"raw": "{\n    \"name\":\"UC\",\n    \"location\":\"Cnr of Sefako Makghato Drive, Baviaanspoort Rd, Derdepoort, Pretoria, 0159\",\n    \"description\":\"Testing the test\",\n}"
 				},
 				"url": {
 					"raw": "{{server}}/api/serviceTypes",
@@ -136,7 +137,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nameee1\":\"Updated Sunday Se123213rvice\",\n    \"location\":\"Just otherside the chinamasadfll\",\n    \"description\":\"Testing the test\",\n}"
+					"raw": "{\n    \"name\":\"Updated Sunday Service\",\n    \"location\":\"Just otherside the chinamasadfll\",\n    \"description\":\"Testing the test\",\n}"
 				},
 				"url": {
 					"raw": "{{server}}/api/serviceTypes/1",
@@ -178,14 +179,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{server}}/api/serviceTypes/14",
+					"raw": "{{server}}/api/serviceTypes/1",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"serviceTypes",
-						"14"
+						"1"
 					]
 				}
 			},
@@ -242,14 +243,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{server}}/api/services/9",
+					"raw": "{{server}}/api/services/1",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"services",
-						"9"
+						"1"
 					]
 				}
 			},
@@ -348,14 +349,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{server}}/api/services/8",
+					"raw": "{{server}}/api/services/2",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"services",
-						"8"
+						"2"
 					]
 				}
 			},
