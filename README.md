@@ -99,6 +99,8 @@ You can find the API documentation in the form of a Postman collection at [servd
   - building for prod takes approx 10min needs to get addressed
 7. Eager Loading, Lazy Loading using lazy loading due to the small nature of the application
 8. Update serivce reset dates to empty fields
+9. Implement testing with in github action
+
 
 
 
