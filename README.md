@@ -98,6 +98,7 @@ You can find the API documentation in the form of a Postman collection at [servd
 6. grails dockerastion looks at using the run app for the development environment to add the ability to hot reload 
   - building for prod takes approx 10min need to get addressed
 7. Eager Loading, Lazy Loading using lazy loading due to the small nature of the application
+8. Implement testing with in github action
 
 
 
