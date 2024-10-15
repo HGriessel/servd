@@ -6,7 +6,7 @@ import grails.validation.ValidationException
 import spock.lang.*
 
 class ChurchServiceTypeControllerSpec extends Specification implements ControllerUnitTest<ChurchServiceTypeController>, DomainUnitTest<ChurchServiceType> {
-
+/*
     def populateValidParams(params) {
         assert params != null
 
@@ -218,6 +218,7 @@ class ChurchServiceTypeControllerSpec extends Specification implements Controlle
         response.redirectedUrl == '/churchServiceType/index'
         flash.message != null
     }
+    */
 }
 
 

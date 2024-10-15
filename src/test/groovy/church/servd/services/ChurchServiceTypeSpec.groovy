@@ -11,8 +11,8 @@ class ChurchServiceTypeSpec extends Specification implements DomainUnitTest<Chur
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test something that is working"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

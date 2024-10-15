@@ -96,9 +96,11 @@ You can find the API documentation in the form of a Postman collection at [servd
 4. Pagination for index/list endpoints
 5. ~~Datetime HH:MM not setting correctly from Vue.JS~~
 6. grails dockerastion looks at using the run app for the development environment to add the ability to hot reload 
-  - building for prod takes approx 10min need to get addressed
+  - building for prod takes approx 10min needs to get addressed
 7. Eager Loading, Lazy Loading using lazy loading due to the small nature of the application
-8. Implement testing with in github action
+8. Update serivce reset dates to empty fields
+9. Implement testing with in github action
+
 
 
 
