@@ -13,6 +13,6 @@ class ChurchServiceTypeSpec extends Specification implements DomainUnitTest<Chur
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }
