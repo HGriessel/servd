@@ -91,11 +91,15 @@ You can find the API documentation in the form of a Postman collection at [servd
 
 ## TODO 
 1. ~~Return whether delete was successful or not~~
-2. Update does not validate incorrect field names ie if you pass names instead of names it will be ignored with no warning
-  - however, when the updated object is returned responsibility can sit on the client side to ensure correct updates were made
+2. ~~Update does not validate incorrect field names ie if you pass names instead of names it will be ignored with no warning~~
+  ~~- however, when the updated object is returned responsibility can sit on the client side to ensure correct updates were made~~
 4. Pagination for index/list endpoints
-5. ~~Datetime HH:MM not setting correctly from Vue.JS~~
-6. grails dockerastion looks at using the run app for the development environment to add the ability to hot reload 
+5. Add filter in servicelist to search by **NOTE** decide on whether to do this on FE, BE or both
+   - type
+   - location
+   - date
+8. ~~Datetime HH:MM not setting correctly from Vue.JS~~
+9. grails dockerastion look at using the run app for the development environment to add the ability to hot reload 
   - building for prod takes approx 10min need to get addressed
 7. Eager Loading, Lazy Loading using lazy loading due to the small nature of the application
 8. Implement testing with in github action
